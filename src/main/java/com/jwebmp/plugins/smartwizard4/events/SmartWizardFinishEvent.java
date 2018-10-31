@@ -1,9 +1,9 @@
-package com.jwebmp.plugins.smartwizard.events;
+package com.jwebmp.plugins.smartwizard4.events;
 
 import com.jwebmp.core.Event;
 import com.jwebmp.core.base.ajax.AjaxCall;
 import com.jwebmp.core.base.ajax.AjaxResponse;
-import com.jwebmp.plugins.smartwizard.ISmartWizardEvents;
+import com.jwebmp.plugins.smartwizard4.ISmartWizardEvents;
 
 public abstract class SmartWizardFinishEvent
 		extends Event

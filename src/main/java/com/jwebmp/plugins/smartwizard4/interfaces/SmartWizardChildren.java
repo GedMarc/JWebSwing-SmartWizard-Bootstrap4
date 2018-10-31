@@ -14,4 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.smartwizard;
+package com.jwebmp.plugins.smartwizard4.interfaces;
+
+import com.jwebmp.core.base.ComponentBase;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
+
+/**
+ * @author Marc Magon
+ * @version 1.0
+ * @since 07 Aug 2015
+ */
+public interface SmartWizardChildren<C extends IComponentHierarchyBase, J extends ComponentBase>
+		extends IComponentHierarchyBase<C, J>
+{
+
+}

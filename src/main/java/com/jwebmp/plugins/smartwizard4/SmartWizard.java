@@ -15,13 +15,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.smartwizard;
+package com.jwebmp.plugins.smartwizard4;
 
 import com.jwebmp.core.base.html.Div;
 import com.jwebmp.core.base.html.attributes.NoAttributes;
 import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
-import com.jwebmp.plugins.smartwizard.interfaces.SmartWizardFeatures;
+import com.jwebmp.plugins.smartwizard4.interfaces.SmartWizardFeatures;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
@@ -31,16 +31,16 @@ import java.util.List;
 		description = "Smart Wizard is a flexible and heavily customizable jQuery step wizard plugin " + "with Bootstrap support. ",
 		url = "https://github.com/GedMarc/JWebMP-SmartWizard")
 public class SmartWizard<J extends SmartWizard<J>>
-		extends Div<IComponentHierarchyBase, NoAttributes, SmartWizardFeatures, ISmartWizardEvents, J>
+		extends Div<IComponentHierarchyBase, NoAttributes, SmartWizardFeatures, com.jwebmp.plugins.smartwizard4.ISmartWizardEvents, J>
 {
 	/**
 	 * My Feature
 	 */
-	private final SmartWizardFeature feature;
+	private final com.jwebmp.plugins.smartwizard4.SmartWizardFeature feature;
 	/**
 	 * The actual steps
 	 */
-	private List<SmartWizardStep> steps;
+	private List<com.jwebmp.plugins.smartwizard4.SmartWizardStep> steps;
 
 	/**
 	 * Configures the page for this component
@@ -48,7 +48,7 @@ public class SmartWizard<J extends SmartWizard<J>>
 	public SmartWizard(String id)
 	{
 		setID(id);
-		feature = new SmartWizardFeature(this);
+		feature = new com.jwebmp.plugins.smartwizard4.SmartWizardFeature(this);
 		addFeature(feature);
 	}
 
@@ -69,7 +69,7 @@ public class SmartWizard<J extends SmartWizard<J>>
 
 			com.jwebmp.core.base.html.List stepList = new com.jwebmp.core.base.html.List();
 			Div actualContent = new Div();
-			for (SmartWizardStep step : getSteps())
+			for (com.jwebmp.plugins.smartwizard4.SmartWizardStep step : getSteps())
 			{
 				stepList.add(step.getStepTitle());
 				actualContent.add(step.getStepContents());
@@ -93,7 +93,7 @@ public class SmartWizard<J extends SmartWizard<J>>
 	 * @return
 	 */
 	@NotNull
-	public List<SmartWizardStep> getSteps()
+	public List<com.jwebmp.plugins.smartwizard4.SmartWizardStep> getSteps()
 	{
 		if (steps == null)
 		{
@@ -110,7 +110,7 @@ public class SmartWizard<J extends SmartWizard<J>>
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	public J setSteps(@NotNull List<SmartWizardStep> steps)
+	public J setSteps(@NotNull List<com.jwebmp.plugins.smartwizard4.SmartWizardStep> steps)
 	{
 		this.steps = steps;
 		return (J) this;
@@ -122,7 +122,7 @@ public class SmartWizard<J extends SmartWizard<J>>
 	 * @return
 	 */
 	@NotNull
-	public SmartWizardFeature getFeature()
+	public com.jwebmp.plugins.smartwizard4.SmartWizardFeature getFeature()
 	{
 		return feature;
 	}

@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.smartwizard;
+package com.jwebmp.plugins.smartwizard4;
 
 import com.jwebmp.core.base.references.CSSReference;
-import com.jwebmp.plugins.smartwizard.interfaces.ISmartWizardTheme;
+import com.jwebmp.plugins.smartwizard4.interfaces.ISmartWizardTheme;
 
 public enum SmartWizardThemes
 		implements ISmartWizardTheme

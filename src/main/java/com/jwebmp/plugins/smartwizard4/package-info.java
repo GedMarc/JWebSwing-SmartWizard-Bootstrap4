@@ -14,17 +14,3 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.smartwizard.interfaces;
-
-import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
-
-/**
- * @author Marc Magon
- * @version 1.0
- * @since 07 Aug 2015
- */
-public interface SmartWizardFeatures
-		extends GlobalFeatures
-{
-
-}

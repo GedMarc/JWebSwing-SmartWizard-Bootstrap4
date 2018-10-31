@@ -20,11 +20,11 @@ package com.jwebmp.plugins.angularfileupload;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.html.Div;
 import com.jwebmp.core.base.html.SmallText;
-import com.jwebmp.plugins.smartwizard.SmartWizard;
-import com.jwebmp.plugins.smartwizard.SmartWizardStep;
-import com.jwebmp.plugins.smartwizard.SmartWizardStepItem;
-import com.jwebmp.plugins.smartwizard.SmartWizardThemes;
-import com.jwebmp.plugins.smartwizard.options.SmartWizardTransitionEffects;
+import com.jwebmp.plugins.smartwizard4.SmartWizard;
+import com.jwebmp.plugins.smartwizard4.SmartWizardStep;
+import com.jwebmp.plugins.smartwizard4.SmartWizardStepItem;
+import com.jwebmp.plugins.smartwizard4.SmartWizardThemes;
+import com.jwebmp.plugins.smartwizard4.options.SmartWizardTransitionEffects;
 
 public class SmartWizardTest
 

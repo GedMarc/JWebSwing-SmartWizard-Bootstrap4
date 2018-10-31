@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.smartwizard.options;
+package com.jwebmp.plugins.smartwizard4.options;
 
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 

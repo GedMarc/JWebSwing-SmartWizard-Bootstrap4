@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.smartwizard;
+package com.jwebmp.plugins.smartwizard4;
 
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.plugins.smartwizard.options.*;
+import com.jwebmp.plugins.smartwizard4.options.*;
 
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;

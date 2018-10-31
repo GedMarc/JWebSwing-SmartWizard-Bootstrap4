@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.smartwizard.options;
+package com.jwebmp.plugins.smartwizard4.options;
 
 public enum SmartWizardTransitionEffects
 {

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.smartwizard;
+package com.jwebmp.plugins.smartwizard4;
 
 import com.jwebmp.core.base.html.Link;
 import com.jwebmp.core.base.html.ListItem;

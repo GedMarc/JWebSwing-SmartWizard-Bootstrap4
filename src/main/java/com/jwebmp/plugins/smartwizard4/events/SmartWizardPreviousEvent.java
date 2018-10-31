@@ -15,29 +15,29 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.jwebmp.plugins.smartwizard.events;
+package com.jwebmp.plugins.smartwizard4.events;
 
 import com.jwebmp.core.Event;
 import com.jwebmp.core.base.ajax.AjaxCall;
 import com.jwebmp.core.base.ajax.AjaxResponse;
-import com.jwebmp.plugins.smartwizard.ISmartWizardEvents;
+import com.jwebmp.plugins.smartwizard4.ISmartWizardEvents;
 
-public abstract class SmartWizardResetEvent
+public abstract class SmartWizardPreviousEvent
 		extends Event
 		implements ISmartWizardEvents
 {
 
-	public SmartWizardResetEvent()
+	public SmartWizardPreviousEvent()
 	{
-		super("SmartWizardResetEvent");
+		super("SmartWizardPreviousEvent");
 	}
 
 	@Override
 	public void fireEvent(AjaxCall call, AjaxResponse response)
 	{
 		super.fireEvent(call, response);
-		onReset(call, response);
+		onPrevious(call, response);
 	}
 
-	public abstract void onReset(AjaxCall call, AjaxResponse response);
+	public abstract void onPrevious(AjaxCall call, AjaxResponse response);
 }
