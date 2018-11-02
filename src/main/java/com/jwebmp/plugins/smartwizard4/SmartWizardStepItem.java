@@ -24,8 +24,6 @@ import com.jwebmp.core.base.html.SmallText;
 public class SmartWizardStepItem
 		extends ListItem<SmartWizardStepItem>
 {
-
-
 	private String title;
 	private Link stepLink;
 	private SmallText stepDescription;
@@ -51,6 +49,39 @@ public class SmartWizardStepItem
 			add(stepLink);
 		}
 		super.init();
+	}
+
+	public String getTitle()
+	{
+		return title;
+	}
+
+	public SmartWizardStepItem setTitle(String title)
+	{
+		this.title = title;
+		return this;
+	}
+
+	public Link getStepLink()
+	{
+		return stepLink;
+	}
+
+	public SmartWizardStepItem setStepLink(Link stepLink)
+	{
+		this.stepLink = stepLink;
+		return this;
+	}
+
+	public SmallText getStepDescription()
+	{
+		return stepDescription;
+	}
+
+	public SmartWizardStepItem setStepDescription(SmallText stepDescription)
+	{
+		this.stepDescription = stepDescription;
+		return this;
 	}
 
 	@Override
