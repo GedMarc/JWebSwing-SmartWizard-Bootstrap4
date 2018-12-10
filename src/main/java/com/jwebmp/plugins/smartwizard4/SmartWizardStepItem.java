@@ -45,6 +45,7 @@ public class SmartWizardStepItem
 				stepLink = new Link<>("#step_" + getID()).setText(title + "<br/>");
 			}
 			stepLink.setRenderTextBeforeChildren(true);
+			if(stepDescription != null)
 			stepLink.add(stepDescription);
 			add(stepLink);
 		}
