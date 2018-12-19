@@ -21,12 +21,25 @@ import com.jwebmp.core.base.html.Link;
 import com.jwebmp.core.base.html.ListItem;
 import com.jwebmp.core.base.html.SmallText;
 
-public class SmartWizardStepItem
-		extends ListItem<SmartWizardStepItem>
+public class SmartWizardStepItem<J extends SmartWizardStepItem<J>>
+		extends ListItem<J>
 {
 	private String title;
 	private Link stepLink;
 	private SmallText stepDescription;
+
+	public SmartWizardStepItem(String title)
+	{
+		this.title = title;
+		this.stepDescription = null;
+	}
+
+
+	public SmartWizardStepItem(String title, String stepDescription)
+	{
+		this.title = title;
+		this.stepDescription = new SmallText(stepDescription);
+	}
 
 	public SmartWizardStepItem(String title, SmallText stepDescription)
 	{

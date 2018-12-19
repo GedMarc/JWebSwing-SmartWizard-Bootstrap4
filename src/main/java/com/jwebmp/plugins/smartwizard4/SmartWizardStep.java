@@ -19,8 +19,7 @@ package com.jwebmp.plugins.smartwizard4;
 
 import com.jwebmp.core.base.html.Div;
 
-public class SmartWizardStep
-
+public class SmartWizardStep<J extends SmartWizardStep<J>>
 {
 	/**
 	 * The actual contents of the step
