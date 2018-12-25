@@ -119,6 +119,23 @@ public class SmartWizard<J extends SmartWizard<J>>
 		return (J) this;
 	}
 
+	/**
+	 * Convenience method to open up all tabs for a wizard
+	 *
+	 * @return this
+	 */
+	@SuppressWarnings("unchecked")
+	public J openAllTabs()
+	{
+		getOptions()
+				.getAnchorSettings()
+				.setEnableAllAnchors(true)
+				.setMarkDoneStep(true)
+				.setMarkAllPreviousStepsAsDone(true)
+				.setAnchorClickable(true);
+		return (J)this;
+	}
+
 	@SuppressWarnings("unchecked")
 	@NotNull
 	public J addStep(SmartWizardStep step)
