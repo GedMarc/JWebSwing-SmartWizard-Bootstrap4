@@ -43,6 +43,31 @@ public class SmartWizardStep<J extends SmartWizardStep<J>>
 	 *
 	 * @param stepContents
 	 * @param stepTitle
+	 * @param stepDescription
+	 */
+	public SmartWizardStep(Div stepContents, String stepTitle, String stepDescription)
+	{
+		this.stepContents = stepContents;
+		this.stepTitle = new SmartWizardStepItem(stepTitle, stepDescription);
+	}
+
+	/**
+	 * Construct a new Smart Wizard Step with the given items
+	 *
+	 * @param stepContents
+	 * @param stepTitle
+	 */
+	public SmartWizardStep(Div stepContents, String stepTitle)
+	{
+		this.stepContents = stepContents;
+		this.stepTitle = new SmartWizardStepItem(stepTitle);
+	}
+
+	/**
+	 * Construct a new Smart Wizard Step with the given items
+	 *
+	 * @param stepContents
+	 * @param stepTitle
 	 */
 	public SmartWizardStep(Div stepContents, SmartWizardStepItem stepTitle)
 	{
