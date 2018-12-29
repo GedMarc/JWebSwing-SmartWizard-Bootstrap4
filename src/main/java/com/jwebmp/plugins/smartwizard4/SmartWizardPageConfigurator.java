@@ -19,9 +19,7 @@ package com.jwebmp.plugins.smartwizard4;
 
 import com.google.inject.Singleton;
 import com.jwebmp.core.Page;
-import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
-import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import javax.validation.constraints.NotNull;
@@ -111,9 +109,6 @@ public class SmartWizardPageConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(true);
-			AngularPageConfigurator.setRequired(true);
-
 			page.addJavaScriptReference(SmartWizardReferencePool.SmartWizardReference.getJavaScriptReference());
 			page.addCssReference(SmartWizardReferencePool.SmartWizardReference.getCssReference());
 			page.addCssReference(SmartWizardPageConfigurator.theme.getThemeReference());
