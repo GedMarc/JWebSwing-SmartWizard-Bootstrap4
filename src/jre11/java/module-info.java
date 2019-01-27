@@ -1,9 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.smartwizard4.SmartWizardPageConfigurator;
-import com.jwebmp.plugins.smartwizard4.implementations.SmartWizard4ExclusionsModule;
-
 module com.jwebmp.plugins.smartwizard4 {
 
 	exports com.jwebmp.plugins.smartwizard4;
@@ -20,10 +14,10 @@ module com.jwebmp.plugins.smartwizard4 {
 	requires com.google.guice;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with SmartWizardPageConfigurator;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.smartwizard4.SmartWizardPageConfigurator;
 
-	provides IGuiceScanModuleExclusions with SmartWizard4ExclusionsModule;
-	provides IGuiceScanJarExclusions with SmartWizard4ExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.smartwizard4.implementations.SmartWizard4ExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.smartwizard4.implementations.SmartWizard4ExclusionsModule;
 
 	opens com.jwebmp.plugins.smartwizard4 to com.fasterxml.jackson.databind, com.jwebmp.core;
 	opens com.jwebmp.plugins.smartwizard4.options to com.fasterxml.jackson.databind, com.jwebmp.core;
