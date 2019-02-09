@@ -36,8 +36,8 @@ import javax.validation.constraints.NotNull;
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-SmartWizard/wiki",
 		pluginOriginalHomepage = "http://techlaboratory.net/angularfileupload/documentation",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/SmartWizard.jar/download",
-		pluginIconUrl = "jqueryuidatetimepicker.png",
-		pluginIconImageUrl = "jqueryuidatetimepicker.png",
+		pluginIconUrl = "jquidatetimepicker.png",
+		pluginIconImageUrl = "jquidatetimepicker.png",
 		pluginLastUpdatedDate = "2017/09/22")
 @Singleton
 @SuppressWarnings("unused")
@@ -107,7 +107,7 @@ public class SmartWizardPageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			page.addJavaScriptReference(SmartWizardReferencePool.SmartWizardReference.getJavaScriptReference());
 			page.addCssReference(SmartWizardReferencePool.SmartWizardReference.getCssReference());
