@@ -21,7 +21,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.inject</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>guice</artifactId><type>jar</type>
             </dependency>
         <dependency>
