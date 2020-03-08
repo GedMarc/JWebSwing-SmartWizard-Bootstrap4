@@ -17,7 +17,6 @@ module com.jwebmp.plugins.smartwizard4 {
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.smartwizard4.SmartWizardPageConfigurator;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.smartwizard4.implementations.SmartWizard4ExclusionsModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.smartwizard4.implementations.SmartWizard4ExclusionsModule;
 
 	opens com.jwebmp.plugins.smartwizard4 to com.fasterxml.jackson.databind, com.jwebmp.core;
 	opens com.jwebmp.plugins.smartwizard4.options to com.fasterxml.jackson.databind, com.jwebmp.core;
