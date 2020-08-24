@@ -1,6 +1,6 @@
 {
   "name": "smartwizard",
-  "version": "4.3.1",
+  "version": "4.4.1",
   "homepage": "https://github.com/techlab/SmartWizard",
   "authors": [
     "Dipu Raj <hello@techlaboratory.net>"
@@ -20,8 +20,8 @@
     "jquery"
   ],
   "dependencies": {
-    "jquery": ">= 1.9.0",
-    "bootstrap": ">= 4.0.0-alpha.6"
+    "jquery": ">= 3.3.1",
+    "bootstrap": ">= 4.0.0"
   },
   "license": "MIT",
   "ignore": [
@@ -36,11 +36,11 @@
     "*jquery.json",
     "test"
   ],
-  "_release": "4.3.1",
+  "_release": "4.4.1",
   "_resolution": {
     "type": "version",
-    "tag": "v4.3.1",
-    "commit": "cf9feba37a841c30a87c3364dfa4411a18fbcb0f"
+    "tag": "v4.4.1",
+    "commit": "a6cd81805dc918a1ca1ed3c0bd64f6a4e66a1adf"
   },
   "_source": "https://github.com/techlab/SmartWizard.git",
   "_target": "^4.3.1",
