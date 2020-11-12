@@ -8,7 +8,7 @@ module com.jwebmp.plugins.smartwizard4 {
 	requires com.jwebmp.core;
 	requires com.guicedee.logmaster;
 
-	requires java.validation;
+	requires jakarta.validation;
 	requires java.logging;
 	requires com.google.guice;
 	requires com.guicedee.guicedinjection;
