@@ -19,8 +19,10 @@ package com.jwebmp.plugins.smartwizard4;
 
 import com.jwebmp.core.base.html.Div;
 import com.jwebmp.core.base.html.attributes.NoAttributes;
+import com.jwebmp.core.base.html.interfaces.GlobalChildren;
 import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
+import com.jwebmp.plugins.smartwizard4.interfaces.SmartWizardChildren;
 import com.jwebmp.plugins.smartwizard4.interfaces.SmartWizardFeatures;
 
 import jakarta.validation.constraints.NotNull;
@@ -31,7 +33,7 @@ import java.util.List;
 		description = "Smart Wizard is a flexible and heavily customizable jQuery step wizard plugin " + "with Bootstrap support. ",
 		url = "https://github.com/GedMarc/JWebMP-SmartWizard")
 public class SmartWizard<J extends SmartWizard<J>>
-		extends Div<IComponentHierarchyBase, NoAttributes, SmartWizardFeatures, com.jwebmp.plugins.smartwizard4.ISmartWizardEvents, J>
+		extends Div<GlobalChildren, NoAttributes, SmartWizardFeatures, com.jwebmp.plugins.smartwizard4.ISmartWizardEvents, J>
 {
 	/**
 	 * My Feature

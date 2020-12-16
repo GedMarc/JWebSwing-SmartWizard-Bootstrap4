@@ -20,6 +20,7 @@ package com.jwebmp.plugins.smartwizard4;
 import com.google.inject.Singleton;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -35,10 +36,15 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "https://github.com/GedMarc/JWebMP-SmartWizard",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-SmartWizard/wiki",
 		pluginOriginalHomepage = "http://techlaboratory.net/angularfileupload/documentation",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/SmartWizard.jar/download",
-		pluginIconUrl = "jquidatetimepicker.png",
-		pluginIconImageUrl = "jquidatetimepicker.png",
-		pluginLastUpdatedDate = "2017/09/22")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.forms/jwebmp-smart-wizard",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2020/12/16",
+		pluginGroupId = "com.jwebmp.plugins.forms",
+		pluginArtifactId = "jwebmp-smart-wizard",
+		pluginModuleName = "com.jwebmp.plugins.smartwizard4",
+		pluginStatus = PluginStatus.Released
+)
 @Singleton
 @SuppressWarnings("unused")
 public class SmartWizardPageConfigurator

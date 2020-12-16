@@ -20,7 +20,7 @@ package com.jwebmp.plugins.smartwizard4.options;
 import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 public class SmartWizardAnchorSettings
-		extends JavaScriptPart
+		extends JavaScriptPart<SmartWizardAnchorSettings>
 {
 	/**
 	 * Enable or disable the click option on the step header anchors

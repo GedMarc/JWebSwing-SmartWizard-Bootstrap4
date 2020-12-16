@@ -30,7 +30,7 @@ import jakarta.validation.constraints.NotNull;
  * @since 2013/01/16
  */
 public class SmartWizardFeature
-		extends Feature<GlobalFeatures, SmartWizardOptions, SmartWizardFeature>
+		extends Feature<GlobalFeatures, SmartWizardOptions<?>, SmartWizardFeature>
 
 {
 
@@ -81,7 +81,7 @@ public class SmartWizardFeature
 	@Override
 	public void assignFunctionsToComponent()
 	{
-		String requiredString = getComponent().getJQueryID() + "smartWizard(";
+		String requiredString = getComponent().asBase().getJQueryID() + "smartWizard(";
 		requiredString += getOptions().toString();
 		requiredString += ");" + getNewLine();
 		addQuery(requiredString);

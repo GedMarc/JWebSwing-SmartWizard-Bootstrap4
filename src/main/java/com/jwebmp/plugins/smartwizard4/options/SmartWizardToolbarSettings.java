@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SmartWizardToolbarSettings
-		extends JavaScriptPart
+		extends JavaScriptPart<SmartWizardToolbarSettings>
 {
 	/**
 	 * Position of the toolbar (none, top, bottom, both)
