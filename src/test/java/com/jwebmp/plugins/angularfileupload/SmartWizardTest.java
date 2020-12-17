@@ -46,7 +46,7 @@ public class SmartWizardTest
 	@org.junit.jupiter.api.Test
 	public void testPage()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		SmartWizard sw = new SmartWizard("test");
 		p.getBody()
 		 .add(sw);
