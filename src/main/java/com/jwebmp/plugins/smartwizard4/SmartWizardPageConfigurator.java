@@ -26,7 +26,7 @@ import com.jwebmp.core.services.IPageConfigurator;
 import jakarta.validation.constraints.NotNull;
 
 @PluginInformation(pluginName = "Smart Wizard",
-		pluginUniqueName = "jwebswing-smart-wizard",
+		pluginUniqueName = "smart-wizard",
 		pluginDescription = "The awesome jQuery step wizard plugin with Bootstrap support",
 		pluginVersion = "4",
 		pluginDependancyUniqueIDs = "jquery,bootstrap",
