@@ -19,12 +19,13 @@ package com.jwebmp.plugins.angularfileupload;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.html.Div;
+import com.jwebmp.core.base.html.DivSimple;
 import com.jwebmp.core.base.html.SmallText;
-import com.jwebmp.plugins.smartwizard4.SmartWizard;
-import com.jwebmp.plugins.smartwizard4.SmartWizardStep;
-import com.jwebmp.plugins.smartwizard4.SmartWizardStepItem;
-import com.jwebmp.plugins.smartwizard4.SmartWizardThemes;
-import com.jwebmp.plugins.smartwizard4.options.SmartWizardTransitionEffects;
+import com.jwebmp.plugins.smartwizard.SmartWizard;
+import com.jwebmp.plugins.smartwizard.SmartWizardStep;
+import com.jwebmp.plugins.smartwizard.SmartWizardStepItem;
+import com.jwebmp.plugins.smartwizard.SmartWizardThemes;
+import com.jwebmp.plugins.smartwizard.options.SmartWizardTransitionEffects;
 
 public class SmartWizardTest
 
@@ -35,11 +36,11 @@ public class SmartWizardTest
 	{
 		SmartWizard sw = new SmartWizard("test");
 		sw.getSteps()
-		  .add(new SmartWizardStep(new Div(), new SmartWizardStepItem("Header", new SmallText("Description"))));
+		  .add(new SmartWizardStep(new DivSimple<>(), new SmartWizardStepItem("Header", new SmallText("Description"))));
 		sw.getSteps()
-		  .add(new SmartWizardStep(new Div(), new SmartWizardStepItem("Header", new SmallText("Description"))));
+		  .add(new SmartWizardStep(new DivSimple<>(), new SmartWizardStepItem("Header", new SmallText("Description"))));
 		sw.getSteps()
-		  .add(new SmartWizardStep(new Div(), new SmartWizardStepItem("Header", new SmallText("Description"))));
+		  .add(new SmartWizardStep(new DivSimple<>(), new SmartWizardStepItem("Header", new SmallText("Description"))));
 		System.out.println(sw.toString(0));
 	}
 
@@ -66,7 +67,7 @@ public class SmartWizardTest
 		SmartWizard sw = new SmartWizard("test");
 
 		sw.getSteps()
-		  .add(new SmartWizardStep(new Div(), new SmartWizardStepItem("Header", new SmallText("Description"))));
+		  .add(new SmartWizardStep(new DivSimple<>(), new SmartWizardStepItem("Header", new SmallText("Description"))));
 
 		sw.getFeature()
 		  .getOptions()
