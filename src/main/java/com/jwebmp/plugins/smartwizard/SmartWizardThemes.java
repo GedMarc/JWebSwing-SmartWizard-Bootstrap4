@@ -26,6 +26,7 @@ public enum SmartWizardThemes
 	All(new CSSReference("SmartWizardArrowsThemeArrows", 1.0, "bower_components/smartwizard/dist/css/smart_wizard_all.min.css")),
 	Arrows(new CSSReference("SmartWizardArrowsThemeArrows", 1.0, "bower_components/smartwizard/dist/css/smart_wizard_arrows.min.css")),
 	Circles(new CSSReference("SmartWizardArrowsThemeCircles", 1.0, "bower_components/smartwizard/dist/css/smart_wizard_dots.min.css")),
+	Dots(new CSSReference("SmartWizardArrowsThemeCircles", 1.0, "bower_components/smartwizard/dist/css/smart_wizard_dots.min.css")),
 	Dark(new CSSReference("SmartWizardArrowsThemeDark", 1.0, "bower_components/smartwizard/dist/css/smart_wizard_dark.min.css")),
 	Progress(new CSSReference("SmartWizardArrowsThemeProgress", 1.0, "bower_components/smartwizard/dist/css/smart_wizard_progress.min.css")),
 	;

@@ -72,7 +72,7 @@ public class SmartWizard<J extends SmartWizard<J>>
 			{
 				SmartWizardStep<?> step = steps1.get(i);
 				step.getStepContents().addClass("tab-pane");
-				step.getStepContents().addAttribute("role","tabpanel");
+				step.getStepContents().asAttributeBase().addAttribute("role","tabpanel");
 				actualContent.add(step.getStepContents());
 
 				String id = "step_" + step.getStepTitle()

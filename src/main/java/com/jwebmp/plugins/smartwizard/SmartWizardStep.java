@@ -18,13 +18,14 @@
 package com.jwebmp.plugins.smartwizard;
 
 import com.jwebmp.core.base.html.DivSimple;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 
 public class SmartWizardStep<J extends SmartWizardStep<J>>
 {
 	/**
 	 * The actual contents of the step
 	 */
-	private DivSimple<?> stepContents;
+	private IComponentHierarchyBase<?,?> stepContents;
 	/**
 	 * The step title
 	 */
@@ -45,7 +46,7 @@ public class SmartWizardStep<J extends SmartWizardStep<J>>
 	 * @param stepTitle
 	 * @param stepDescription
 	 */
-	public SmartWizardStep(DivSimple<?> stepContents, String stepTitle, String stepDescription)
+	public SmartWizardStep(IComponentHierarchyBase<?,?> stepContents, String stepTitle, String stepDescription)
 	{
 		this.stepContents = stepContents;
 		stepContents.addClass("tab-pane");
@@ -58,7 +59,7 @@ public class SmartWizardStep<J extends SmartWizardStep<J>>
 	 * @param stepContents
 	 * @param stepTitle
 	 */
-	public SmartWizardStep(DivSimple<?> stepContents, String stepTitle)
+	public SmartWizardStep(IComponentHierarchyBase<?,?> stepContents, String stepTitle)
 	{
 		this.stepContents = stepContents;
 		stepContents.addClass("tab-pane");
@@ -71,7 +72,7 @@ public class SmartWizardStep<J extends SmartWizardStep<J>>
 	 * @param stepContents
 	 * @param stepTitle
 	 */
-	public SmartWizardStep(DivSimple<?> stepContents, SmartWizardStepItem<?> stepTitle)
+	public SmartWizardStep(IComponentHierarchyBase<?,?> stepContents, SmartWizardStepItem<?> stepTitle)
 	{
 		this.stepContents = stepContents;
 		stepContents.addClass("tab-pane");
@@ -83,7 +84,7 @@ public class SmartWizardStep<J extends SmartWizardStep<J>>
 	 *
 	 * @return
 	 */
-	public DivSimple<?> getStepContents()
+	public IComponentHierarchyBase<?,?> getStepContents()
 	{
 		return stepContents;
 	}
