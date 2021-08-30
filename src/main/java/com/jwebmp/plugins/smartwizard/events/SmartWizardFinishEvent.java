@@ -6,9 +6,9 @@ import com.jwebmp.core.base.ajax.AjaxResponse;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.smartwizard.ISmartWizardEvents;
 
-public abstract class SmartWizardFinishEvent
-		extends Event<GlobalFeatures,SmartWizardFinishEvent>
-		implements ISmartWizardEvents
+public abstract class SmartWizardFinishEvent<J extends SmartWizardFinishEvent<J>>
+		extends Event<GlobalFeatures,J>
+		implements ISmartWizardEvents<J>
 {
 
 	public SmartWizardFinishEvent()

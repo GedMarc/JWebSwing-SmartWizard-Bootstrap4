@@ -23,9 +23,9 @@ import com.jwebmp.core.base.ajax.AjaxResponse;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.smartwizard.ISmartWizardEvents;
 
-public abstract class SmartWizardPreviousEvent
-		extends Event<GlobalFeatures,SmartWizardPreviousEvent>
-		implements ISmartWizardEvents
+public abstract class SmartWizardPreviousEvent<J extends SmartWizardPreviousEvent<J>>
+		extends Event<GlobalFeatures,J>
+		implements ISmartWizardEvents<J>
 {
 
 	public SmartWizardPreviousEvent()

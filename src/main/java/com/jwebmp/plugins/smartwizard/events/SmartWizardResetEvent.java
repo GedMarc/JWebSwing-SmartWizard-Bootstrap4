@@ -23,9 +23,9 @@ import com.jwebmp.core.base.ajax.AjaxResponse;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.smartwizard.ISmartWizardEvents;
 
-public abstract class SmartWizardResetEvent
-		extends Event<GlobalFeatures,SmartWizardResetEvent>
-		implements ISmartWizardEvents
+public abstract class SmartWizardResetEvent<J extends SmartWizardResetEvent<J>>
+		extends Event<GlobalFeatures,J>
+		implements ISmartWizardEvents<J>
 {
 
 	public SmartWizardResetEvent()

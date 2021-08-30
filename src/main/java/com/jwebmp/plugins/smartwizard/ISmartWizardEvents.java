@@ -22,8 +22,8 @@ import com.jwebmp.plugins.smartwizard.interfaces.SmartWizardEvents;
 /**
  * Strictly typed marker for smart wizard events
  */
-public interface ISmartWizardEvents
-		extends SmartWizardEvents
+public interface ISmartWizardEvents<J extends ISmartWizardEvents<J>>
+		extends SmartWizardEvents<J>
 {
 
 }

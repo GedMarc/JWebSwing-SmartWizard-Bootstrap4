@@ -7,9 +7,9 @@ import com.jwebmp.core.base.ajax.AjaxResponse;
 import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.plugins.smartwizard.ISmartWizardEvents;
 
-public abstract class SmartWizardCancelEvent
-		extends Event<GlobalFeatures,SmartWizardCancelEvent>
-		implements ISmartWizardEvents
+public abstract class SmartWizardCancelEvent<J extends SmartWizardCancelEvent<J>>
+		extends Event<GlobalFeatures,J>
+		implements ISmartWizardEvents<J>
 {
 
 	public SmartWizardCancelEvent()
