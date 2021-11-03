@@ -11,7 +11,7 @@
     <groupId>com.jwebmp.plugins.forms</groupId>
     <artifactId>jwebmp-smart-wizard</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>SmartWizard Bootstrap 4</name>
     <description>The JWebSwing implementation for the smart wizard</description>
     <url>https://github.com/GedMarc/JWebSwing-SmartWizard-Bootstrap4</url>
