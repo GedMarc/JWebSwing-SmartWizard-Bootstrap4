@@ -18,7 +18,7 @@ package com.jwebmp.plugins.smartwizard;
 
 import com.jwebmp.core.base.html.interfaces.AttributeDefinitions;
 
-import static com.guicedee.guicedinjection.json.StaticStrings.*;
+import static com.guicedee.services.jsonrepresentation.json.StaticStrings.*;
 
 /**
  * @author GedMarc
